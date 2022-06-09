@@ -1,0 +1,17 @@
+.footer-content {
+  justify-content: space-between;
+  display: flex;
+  bottom: 0;
+  align-self: center;
+  padding: 30px 205px;
+  background-color: #001f3c;
+  color: #4b6c8e;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content .social-links a {
+  padding: 0 10px;
+  color: #4b6c8e;
+  text-decoration: none;
+}

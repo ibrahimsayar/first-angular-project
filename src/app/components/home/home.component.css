@@ -1,0 +1,50 @@
+.main-apply-job {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-job-information h3 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #0084ff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.apply-job-information-p {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.apply-job-information p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flashlight {
+  background-color: #eaeaeabd;
+  padding: 2px;
+}
+
+.apply-job-table table {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.apply-job-table table th {
+  font-size: 17px;
+  background-color: white;
+}
+
+.apply-job-table table tr {
+  line-height: 50px;
+}
+
+.apply-job-table table td {
+  padding: 0 10px;
+}
+
+.apply-job-table table tr:nth-child(odd) {
+  background: #a9a9a938;
+}
