@@ -10,6 +10,9 @@
 
 .header-center {
     background-color: #001f3c;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .header-nav {

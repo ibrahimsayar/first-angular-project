@@ -1,1 +1,20 @@
-<p>portfolio works!</p>
+<section class="gallery-field" id="portfolio">
+    <div class="container">
+        <div class="gallery-header slide-bottom">
+            <h2>Portfolio</h2>
+            <h3>Little touches</h3>
+        </div>
+        <div class="gallery-grid">
+            <div class="flicker-image col-12 col-sm-6 col-md-4 slide-bottom" *ngFor="let item of portfolio.data">
+                <div class="flicker-image-holder">
+                    <img alt="Naylalabs" src="https://placekitten.com/320/320">
+                </div>
+                <div class="flicker-image-information">
+                    <h3><a href="https://{{item.project_domain}}" target="_blank">{{item.project_domain}}</a></h3>
+                    <h4>{{item.time_estimate}} - {{item.budget}}</h4>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

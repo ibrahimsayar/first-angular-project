@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ApiService} from "../../services/api.service";
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+    selector: 'app-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+    public portfolio: any;
 
-  ngOnInit(): void {
-  }
+    constructor(
+        private apiService: ApiService
+    ) {
+    }
 
+    ngOnInit(): void {
+        this.getPortfolio();
+    }
+
+    getPortfolio() {
+        this.apiService.getPortfolio()
+            .subscribe(res => {
+                this.portfolio = res;
+            });
+    }
 }

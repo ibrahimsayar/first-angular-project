@@ -1,0 +1,100 @@
+.gallery-field {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: #fff;
+}
+
+.gallery-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    background: url('../../../assets/images/about-header.png') no-repeat 70% 0;
+}
+
+.gallery-header > h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #0084ff;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 52px;
+}
+
+.gallery-header > h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-grid {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flicker-image {
+    padding: 15px;
+}
+
+.flicker-image > .flicker-image-holder {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.flicker-image > .flicker-image-holder > img {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 320px;
+    object-fit: cover;
+}
+
+.flicker-image-information h3 {
+    font-size: 18px;
+    display: inline-block;
+    margin: 8px 0 8px 0;
+    color: #0e83fb;
+}
+
+.flicker-image-information h4 {
+    font-size: 16px;
+    margin: 0 0 1px 0;
+    color: black;
+}
+
+.flicker-image-information p {
+    margin: 0 0 1px 0;
+    color: gray;
+    font-size: 13px;
+}
+
+.flicker-image-information a {
+    color: #0084ff;
+    text-decoration: none;
+}
