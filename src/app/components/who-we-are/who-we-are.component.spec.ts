@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WtfComponent } from './wtf.component';
+import { WhoWeAreComponent } from './who-we-are.component';
 
-describe('WtfComponent', () => {
-  let component: WtfComponent;
-  let fixture: ComponentFixture<WtfComponent>;
+describe('WhoWeAreComponent', () => {
+  let component: WhoWeAreComponent;
+  let fixture: ComponentFixture<WhoWeAreComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WtfComponent ]
+      declarations: [ WhoWeAreComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WtfComponent);
+    fixture = TestBed.createComponent(WhoWeAreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
