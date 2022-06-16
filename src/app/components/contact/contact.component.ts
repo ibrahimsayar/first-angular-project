@@ -1,15 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+    public myForm: FormGroup;
 
-  ngOnInit(): void {
-  }
+    constructor(private fb: FormBuilder) {
+    }
 
+    ngOnInit(): void {
+        this.myForm = this.fb.group({
+            name: ['', Validators.required],
+            email: ['', Validators.required],
+            phone: ['', Validators.required],
+            message: ['', Validators.required]
+        });
+    }
+
+    onSubmit(form: FormGroup) {
+        if (!this.myForm.valid) {
+            return;
+        }
+        console.log(this.myForm.value);
+    }
 }

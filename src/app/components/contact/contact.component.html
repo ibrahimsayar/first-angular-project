@@ -1,1 +1,70 @@
-<p>contact works!</p>
+<section class="contact-field" id="contact">
+    <div class="container">
+        <div class="contact-header slide-bottom">
+            <h2>Contact Us</h2>
+            <h3>We Are Ready To Hear From You</h3>
+        </div>
+        <div class="contact-info">
+            <div class="contact-column col-12 col-sm-6 col-md-4 slide-left">
+                <div class="column">
+                    <div class="icon">
+                        <span class="fas fa-globe-europe"></span>
+                    </div>
+                    <div class="header">Address</div>
+                    <div class="text">Cumhuriyet Mah. Adnan Menderes Bulv. 1. Kısım Ada Apt. No:299 Kat:1 Atakum - Samsun</div>
+                </div>
+            </div>
+            <div class="contact-column col-12 col-sm-6 col-md-4 slide-bottom">
+                <div class="column">
+                    <div class="icon">
+                        <span class="fas fa-phone"></span>
+                    </div>
+                    <div class="header">Phone</div>
+                    <a href="tel:+902129360626" class="text">+90 (212) 936 06 26</a>
+                </div>
+            </div>
+            <div class="contact-column col-12 col-sm-6 col-md-4 slide-right">
+                <div class="column">
+                    <div class="icon">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                    <div class="header">E-mail</div>
+                    <a href="mailto:hello@naylalabs.com" class="text">hello@naylalabs.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-header slide-bottom">
+            <h2>Contact Form</h2>
+            <h3>You Can Send A Message</h3>
+        </div>
+        <form class="contact-form slide-bottom" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+            <div class="form-element col-12 col-sm-12 col-md-4">
+                <input formControlName="name" placeholder="Your name">
+                <span style="color:white;" *ngIf="myForm.get('name').invalid && (myForm.get('name').dirty || myForm.get('name').touched)">
+                    Please write your name
+                </span>
+            </div>
+            <div class="form-element col-12 col-sm-12 col-md-4">
+                <input formControlName="email" placeholder="Your email">
+                <span style="color:white;" *ngIf="myForm.get('email').invalid && (myForm.get('email').dirty || myForm.get('email').touched)">
+                    Please write your email
+                </span>
+            </div>
+            <div class="form-element col-12 col-sm-12 col-md-4">
+                <input formControlName="phone" placeholder="Your phone">
+                <span style="color:white;" *ngIf="myForm.get('phone').invalid && (myForm.get('phone').dirty || myForm.get('phone').touched)">
+                    Please write your phone
+                </span>
+            </div>
+            <div class="form-element col-12 col-sm-12 col-md-12">
+                <textarea formControlName="message" placeholder="Your message"></textarea>
+                <span style="color:white;" *ngIf="myForm.get('message').invalid && (myForm.get('message').dirty || myForm.get('message').touched)">
+                    Please write your message
+                </span>
+            </div>
+            <div class="form-element col-12 col-sm-12 col-md-12 text-center">
+                <button type="submit">SEND</button>
+            </div>
+        </form>
+    </div>
+</section>
