@@ -1,0 +1,91 @@
+.career-field {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #fff;
+}
+
+.career-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    background: url('../../../assets/images/about-header.png') no-repeat 70% 0;
+}
+
+.career-header > h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #0084ff;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 52px;
+}
+
+.career-grid {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+p.subtitle {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+p.subtitle code {
+    font-family: Montserrat, sans-serif;
+    padding: 3px 6px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    background-color: #f3f4f4;
+    border-radius: 6px;
+}
+
+.career-field .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.career-field table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-family: Montserrat, sans-serif;
+    margin-top: 45px;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.career-field table thead th {
+    vertical-align: bottom;
+    color: #222;
+}
+
+.career-field table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.career-field table td {
+    font-weight: 500;
+    color: #333;
+}
+
+.career-field table td, .career-field table th {
+    padding: 15px;
+    vertical-align: top;
+}
