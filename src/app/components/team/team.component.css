@@ -1,0 +1,151 @@
+.team-field {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    background: url('../../../assets/images/parallax-1.png') repeat top center #f5f5f5;
+}
+
+.team-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    background: url('../../../assets/images/about-header.png') no-repeat 70% 0;
+}
+
+.team-header > h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #0084ff;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 52px;
+}
+
+.team-header > h3 {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+}
+
+.person {
+    position: relative;
+    float: left;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.person > .person-holder {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.person > .person-holder > .image-holder {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.person > .person-holder > .image-holder > img {
+    position: relative;
+    display: inline;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 90px;
+}
+
+.person > .person-holder > .person-info {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+.person > .person-holder > .person-info > .name {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+.person > .person-holder > .person-info > .position {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    font-family: Montserrat, sans-serif;
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.person > .person-holder > .person-info > .links {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.person > .person-holder > .person-info > .links > a {
+    position: relative;
+    display: inline-block;
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #0080ff;
+}
+
+.person > .person-holder > .person-info > .links > a > span {
+    position: relative;
+    float: left;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out 0s;
+    -moz-transition: all .2s ease-in-out 0s;
+    -ms-transition: all .2s ease-in-out 0s;
+    -o-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+}

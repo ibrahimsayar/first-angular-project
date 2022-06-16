@@ -5,9 +5,10 @@
             <h3>Little touches</h3>
         </div>
         <div class="gallery-grid">
-            <div class="flicker-image col-12 col-sm-6 col-md-4 slide-bottom" *ngFor="let item of portfolio.data">
+            <div class="flicker-image col-12 col-sm-6 col-md-4 slide-bottom"
+                 *ngFor="let item of portfolio.data;">
                 <div class="flicker-image-holder">
-                    <img alt="Naylalabs" src="https://placekitten.com/320/320">
+                    <img [defaultImage]="defaultImage" [lazyLoad]="image + item.id">
                 </div>
                 <div class="flicker-image-information">
                     <h3><a href="https://{{item.project_domain}}" target="_blank">{{item.project_domain}}</a></h3>

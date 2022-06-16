@@ -1,1 +1,27 @@
-<p>team works!</p>
+<section class="team-field" id="who-are-we">
+    <div class="container">
+        <div class="team-header slide-bottom">
+            <h2>Our Team</h2>
+            <h3>Let's Meet Our Teammates</h3>
+        </div>
+        <div class="person col-12 col-sm-6 col-md-4 slide-bottom" *ngFor="let item of employees.data; let key = index;">
+            <div class="person-holder">
+                <div class="image-holder">
+                    <img [defaultImage]="defaultImage" [lazyLoad]="team.image_url" [errorImage]="errorImage" alt="{{item.name}}">
+                </div>
+                <div class="person-info">
+                    <div class="name">{{item.name}}</div>
+                    <div class="position">{{item.designation}}</div>
+                    <div class="links">
+                        <a href="mailto:{{item.email}}">
+                            <span class="fas fa-envelope"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/{{item.email}}" target="_blank">
+                            <span class="fab fa-linkedin-in"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

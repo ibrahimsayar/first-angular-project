@@ -8,7 +8,10 @@ import {ApiService} from "../../services/api.service";
 })
 export class PortfolioComponent implements OnInit {
 
-    public portfolio: any;
+    public portfolio: any = [];
+
+    public defaultImage: string = 'https://miro.medium.com/max/441/1*9EBHIOzhE1XfMYoKz1JcsQ.gif';
+    public image: string = 'https://picsum.photos/1000/1000?random=';
 
     constructor(
         private apiService: ApiService

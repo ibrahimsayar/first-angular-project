@@ -12,6 +12,7 @@ import {PortfolioComponent} from './components/portfolio/portfolio.component';
 import {TeamComponent} from './components/team/team.component';
 import {CareerComponent} from './components/career/career.component';
 import {ContactComponent} from './components/contact/contact.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
     declarations: [
@@ -29,6 +30,7 @@ import {ContactComponent} from './components/contact/contact.component';
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
+        LazyLoadImageModule
     ],
     providers: [],
     bootstrap: [AppComponent]
